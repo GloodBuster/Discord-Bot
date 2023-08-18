@@ -1,8 +1,6 @@
 import {
   Client,
-  Events,
   GatewayIntentBits,
-  Interaction,
   Message,
 } from "discord.js";
 import { bot_token } from "./utils";
@@ -20,7 +18,7 @@ const client: Client = new Client({
 });
 
 client.on("ready", () => {
-  console.log("Bot is ready!");
+  console.log("Velma is ready!");
 });
 
 client.on("messageCreate", (message: Message) => {

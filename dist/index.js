@@ -16,7 +16,7 @@ const client = new discord_js_1.Client({
     ],
 });
 client.on("ready", () => {
-    console.log("Bot is ready!");
+    console.log("Velma is ready!");
 });
 client.on("messageCreate", (message) => {
     commands_1.default.forEach((command) => {
