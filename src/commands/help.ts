@@ -6,7 +6,9 @@ import { prefix } from "../config.json";
 const getCommands = (): string => {
   return commands
     .map((command) => {
-      return prefix + command.getName();
+      return (
+        prefix + command.getName() + " `" + command.getDescription() + "` "
+      );
     })
     .toString()
     .split(",")

@@ -9,7 +9,7 @@ const config_json_1 = require("../config.json");
 const getCommands = () => {
     return commands_2.default
         .map((command) => {
-        return config_json_1.prefix + command.getName();
+        return (config_json_1.prefix + command.getName() + " `" + command.getDescription() + "` ");
     })
         .toString()
         .split(",")
